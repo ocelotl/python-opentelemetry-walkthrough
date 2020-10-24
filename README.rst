@@ -1,5 +1,5 @@
 =========================================
-MicroDonuts: An OpenTelemetry Walkthrough
+An OpenTelemetry Workshop with Lightstep!
 =========================================
 
 
@@ -19,17 +19,23 @@ This guide has two exclusive steps:
 - `Step 1, Alternative B: Use oteltrace-run`_ shows how to use oteltrace-run to autoinstrument
   an application without adding tracing manually.
 
-Step 0: Setup MicroDonuts
-=========================
+Step 0: Setup the Workshop
+==========================
 
 Getting it
 ----------
 
 #. Install ``virtualenv``: ``sudo -H pip3 install virtualenv``
-#. Create a virtual environment: ``mkdir microdonuts; virtualenv microdonuts``
-#. Activate the virtual environment: ``source microdonuts/bin/activate``
+#. Create a virtual environment: ``mkdir lightstep_workshop; virtualenv lightstep_workshop``
+#. Activate the virtual environment: ``source lightstep_workshop/bin/activate``
 #. Clone this repository: ``git clone git@github.com:lightstep/python-opentelemetry-walkthrough.git``
 #. Install the dependencies ``pip3 install -r python-opentelemetry-walkthrough/requirements.txt``
+#. Install the instrumentations (more on this later): ``opentelemetry-bootstrap --action=install``
+#. Set your environment variables:
+
+   #. ``LS_ACCESS_TOKEN``
+   #. ``LS_SERVICE_NAME``
+   #. ``LS_SERVICE_VERSION``
 
 Running
 -------
